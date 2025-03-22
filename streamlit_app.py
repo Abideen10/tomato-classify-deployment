@@ -23,7 +23,7 @@ if uploaded_image is not None:
     image = Image.open(uploaded_image).convert('RGB')
     st.image(image, caption='Uploaded Image', use_column_width=True)
     
-    class_name = ['Bacterial_spot', 'Early_blight', 'Late_blight', 'Leaf_Mold', 'Septoria_leaf_spot', 'Spider_mites', 'Target_Spot', 'Yellow_Leaf_Curl_Virus', 'Mosaic_virus', 'Healthy']
+    class_name = ['Bacterial_spot', 'Early_blight', 'healthy', 'Late_blight', 'Leaf_Mold', 'Septoria_leaf_spot', 'Spider_Mites', 'Target_Spot', 'mosaic_virus', 'Yellow_Leaf_Curl_Virus']
 
     if st.button('Prediction'):
         #Prediction class
